@@ -73,8 +73,8 @@ body{
 }
 .fruit-3{
 	position: absolute;
-	top: 420px;
-	right: -10px;
+	top: 380px;
+	right: 10px;
 	transform: rotate(25deg)
 }
 .fruit-4{
