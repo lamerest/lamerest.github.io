@@ -5,14 +5,13 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: Montserrat;
-	overflow-x: hidden;
 }
 a{
 	text-decoration: none;
 }
 header{
 	position: absolute;
-	width: 100vw;
+	width: calc(100vw - 14px);
 	margin: -3px;
 	z-index: 20;
 }
@@ -27,9 +26,9 @@ header figure{
 .fs{
 	overflow: hidden;
 	position: relative;
-	width: 100vw;
+	width: calc(100vw - 17px);
 	height: 100vh;
-	background: url(fs.png) no-repeat;
+	background: url(fs.PNG) no-repeat;
 	background-size: 105%;
 	background-position: -60px -150px;
 }
@@ -145,7 +144,38 @@ header figure{
 	color: white;
 	white-space: nowrap;
 }
+.politics{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 300px;
+}
+.politics-header{
+	font-size: 55px;
+	font-weight: 700;
+	text-align: right;
+	letter-spacing: 0.2em;
+}
+.politics_text{
+	width: 55%;
+	text-align: right; 
+}
+.politics-figure{
+	width: 45%;
+}
+.politics img{
+	width: 100%;
+}
+.vertical-line{
+	position: absolute;
+	height: 900px;
+	left: 52.5%;
+	top: -800px;
+	width: 1px;
+	border-left: 2px solid black;
+}
 .bot{
+	position: relative;
 	margin-bottom: 200px;
 }
 .bot_figure{
@@ -271,6 +301,9 @@ footer{
 	background-color: #313435;
 	position: relative;
 }
+.hidden-spot{
+	display: none;
+}
 p, h1, h2, h3{
 	margin: 0;
 }
@@ -355,4 +388,229 @@ p, h1, h2, h3{
 .footer-line img{
 	width: 20px;
 	margin-bottom: 25px;
+}
+
+@media (max-width: 740px){
+	header{
+		display: none;
+	}
+	.fs{
+		width: 100%; 
+		background: url(fs-modile.jpeg) no-repeat;
+		background-size: 100%;
+		display: flex;
+		align-items: center;
+		margin: auto;
+	}
+	.fs-block{
+		position: static;
+		width: 90%;
+		margin: auto;
+	}
+	.wave{
+		display: none;
+	}
+	.specialists{
+		height: 3190px;
+		margin-bottom: 200px;
+	}
+	.specialist-block{
+		width: 60%;
+		margin: auto;
+		transform: none;
+		padding-top: 20px;
+	}
+	.line{
+		display: block;
+		transform: none;
+		height: 1500px;
+		margin: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	.line-2{
+		margin-top: 0px;
+	}
+	.miros-line{
+		top: 0px;
+		left: -500px;
+		transform: rotate(90deg);
+	}
+	.miros-line-2{
+		right: 10%;
+	}
+	.contacts_text{
+		margin-top: 30px;
+	}
+	footer{
+		height: 350px;
+		display: block;
+	}
+	.footer-contacts{
+			border: none;
+	}
+	.prize{
+		display: block;
+	}
+	.prize_text_block{
+		width: 80%;
+		margin: auto; 
+		text-align: center;
+	}
+	.nike_figure{
+		width: 40%;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
+	.fitness{
+		font-size: 100px;
+		left: -150px;
+	}
+	.prize_img{
+		width: 80%;
+		margin: auto;
+	}
+	.politics{
+		width: 96%;
+	}
+	.politics-header{
+		font-size: 30px;
+		letter-spacing: 0.1em;
+		margin-bottom: 20px;
+	}
+	.politics_text{
+		width: 50%;
+		margin-right: 5%;
+	}
+	.bot p{
+		width: 50%;
+		margin-left: 3%;
+		margin-top: -75px;
+	}
+	.politics-figure{
+		margin: 0;
+	}
+	.vertical-line{
+		margin-top: 230px;
+		height: 620px;
+	}
+	.bot_figure{
+		width: 55%;
+		margin-left: 42.3%;
+	}
+}
+@media (max-width: 600px){
+	.fs-text-block{
+		display: none;
+	}
+	.fs-text{
+		display: flex;
+		flex-shrink: nowrap;
+		flex-wrap: wrap;
+	}
+	.hidden-spot{
+		display: block;
+		color: black;
+		margin-top: -100px;
+		margin-bottom: 100px;
+	}
+	.hidden{
+		width: 150px;
+		height: 170px;
+		display: block;
+		color: black;
+		margin: auto;
+		padding: 20px;
+		margin-bottom: 20px;
+		border: 1px solid black;
+		border-radius: 5px;
+	}
+	.fixed-header{
+		margin-bottom: 30px;
+	}
+	.contacts_block{
+		display: block;
+	}
+	.contacts_figure{
+		width: 90%;
+		margin: auto;
+	}
+	.contacts_text{
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+}
+@media (max-width: 570px){
+	.fs{
+		background-size: 120%;
+		background-position: -40px 0px;
+	}
+}
+@media (max-width: 510px){
+	.specialist-figure{
+		width: 100%;
+		margin: 0;
+	}
+	.specialists{
+		height: 2950px;
+	}
+	footer{
+		padding-top: 10px;
+		height: 500px;
+	}
+	.footer-logo{
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.politics{
+		display: block;
+		margin-bottom: 150px;
+	}
+	.politics-header{
+		text-align: center;
+	}
+	.politics_text{
+		width: 90%;
+		margin: auto;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.politics-figure{
+		width: 90%;
+		margin: auto;
+	}
+	.vertical-line{
+		display: none;
+	}
+	.bot_figure{
+		width: 95%;
+		margin: auto;
+	}
+	.bot p{
+		width: 80%;
+		margin: auto;
+		text-align: left;
+
+	}
+}
+@media (max-width: 470px){
+	footer{
+		height: 570px;
+	}
+	.fs{
+		background-size: 150%;
+		background-position: -80px 0;
+
+	}
+	.button{
+		margin-top: 0px;
+		height: 50px;
+		width: 200px;
+	}
+	.fs-header{
+
+	}
 }
