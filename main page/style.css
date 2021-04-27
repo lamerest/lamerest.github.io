@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+body{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat;
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+}
+header{
+	position: absolute;
+	width: 100vw;
+	margin: -3px;
+	z-index: 20;
+}
+header figure{
+	padding: 0;
+	margin: auto;
+	text-align: center;
+}
+.header-logo{
+	width: 80%;
+}
+.fs{
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: url(fs.PNG) no-repeat;
+	background-size: 105%;
+	background-position: -60px -150px;
+}
+.fs-block{
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 600px;
+}
+.fs-header{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 40px;
+	color: white;
+}
+.fs-marathon{
+	color: #96D39C;
+	font-size: 48px;
+}
+.fs-miros{
+	font-size: 36px;
+	font-style: italic;
+}
+.fs-text{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+.fs-text-header{
+	margin-bottom: 30px;
+}
+.fixed-header{
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+.fs-text-block{
+	width: 30%;
+}
+.button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
+	border: 1px solid white;
+	width: 250px;
+	height: 80px;
+	margin: auto;
+	margin-top: 50px;
+	transition: 0.2s;
+	letter-spacing: 0.05em;
+}
+.button:hover{
+	background-color: #313435;
+	border: none;
+}
+.button p{
+	text-align: center;
+}
+.wave{
+	position: absolute;
+	top: calc(100vh - 80px);
+}
+.specialists{
+	padding-top: 50px;
+	position: relative;
+	height: 2020px;
+	overflow: hidden;
+}
+.specialists-header{
+	position: absolute;
+	top: 100px;
+	right: 5%;
+}
+.line{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 125vw;
+	height: 600px;
+	margin-top: 250px;
+	margin-left: -200px;
+	background-color: #96D39C;
+	transform: rotate(18deg);
+	margin-left: -150px;
+}
+.specialist-block{
+	width: 300px;
+	transform: rotate(-18deg);
+	z-index: 10;
+	margin: 80px;
+	margin-top: 50px;
+}
+.specialist-img{
+	width: 100%;
+}
+.specialist-name{
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.specialist-description{
+	color: #4E4E4E;
+	font-weight: 300;
+	text-align: center;
+}
+.miros-line{
+	position: absolute;
+	font-family: Space Mono;
+	font-size: 30px;
+	font-weight: 400;
+	color: white;
+	white-space: nowrap;
+}
+.bot{
+	margin-bottom: 200px;
+}
+.bot_figure{
+	margin-left: 45%;
+	width: 40%;
+}
+.bot_img{
+	width: 100%;
+}
+.bot p{
+	width: 40%;
+	text-align: right;
+	padding: 10px;
+	margin-left: 13%;
+	margin-top: -100px;
+}
+
+.prize{
+	position: relative;
+	display: flex;
+	margin-bottom: 200px;
+}
+.fitness{
+	position: absolute;
+	font-family: Space mono;
+	font-size: 200px;
+	left: -300px;
+	top: 100px;
+	z-index: -1;
+	color: #EAEAEA;
+	font-style: italic;
+	transform: rotate(-90deg);
+}
+.prize_text_block{
+	margin-top: 60px;
+	width: 30%;
+	margin-left: 25%;
+}
+.prize_header{
+	margin-bottom: 40px;
+	text-align: center;
+}
+.prize_text{
+	font-size: 22px; 
+}
+.nike{
+	font-size: 30px;
+	font-weight: 700;
+	font-style: italic;
+	color: #96D39C
+}
+.prize_total{
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 700;
+}
+.nike_figure{
+	margin-top: 100px;
+	width: 60%;
+}
+.nike_figure img{
+	width: 100%;
+}
+.prize_img{
+	width: 30%;
+}
+.prize_img img{
+	width: 100%;
+}
+.contacts{
+	margin-bottom: 100px;
+}
+.contacts_block{
+	display: flex;
+	width: 90%;
+	margin: auto;
+}
+.contacts_header{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.contacts_figure{
+	width: 60%;
+	margin: 0;
+}
+.contacts_figure img{
+	width: 100%;
+}
+.contacts_text{
+	width: 40%;
+	margin-top: 80px;
+}
+.cost{
+	font-weight: 600;
+
+}
+.contacts_p{
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+.inst{
+	margin-bottom: 40px;
+	text-align: center;
+	color: #96D39C;
+	font-weight: 600;
+	font-style: italic;
+	transition: 0.2s;
+}
+.inst:hover{
+	color: royalblue;
+}
+.card{
+	font-weight: 600;
+}
+.Vika{
+	font-weight: 300;
+}
+footer{
+	display: flex;
+	align-content: center;
+	height: 250px;
+	justify-content: space-between;
+	background-color: #313435;
+	position: relative;
+}
+p, h1, h2, h3{
+	margin: 0;
+}
+.footer-logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 15px;
+}
+.footer-logo-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 150px; 
+	border: 2px solid white;
+	border-radius: 50%;
+}
+.footer-logo-img{
+	width: 130px; 
+}
+.footer-miros{
+	height: 150px;
+	margin-top: 30px;
+	margin-left: 20px;
+	font-family: Montserrat;
+	font-size: 50px;
+	color: white;
+	font-weight: 400;
+}
+.footer-contacts{
+	height: 150px;
+	border-left: 1px solid white;
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+}
+.phone, .mail, .footer-title, .by{
+	color: white;
+	font-family: Montserrat;
+}
+.footer-title{
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+.phone{
+	font-size: 16px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	transition: 0.2s;
+}
+.phone:hover{
+	color: royalblue;
+}
+.mail{
+	font-size: 16px;
+	margin-left: 20px;
+	transition: 0.2s;
+}
+.mail:hover{
+	color: royalblue;
+}
+.by{
+	text-align: right;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	font-size: 12px;
+}
+.author{
+	color: white;
+	font-size: 20px;
+	transition: 0.2s;
+}
+.author:hover{
+	color: royalblue;
+}
+.footer-line{
+	display: flex;
+}
+.footer-line img{
+	width: 20px;
+	margin-bottom: 25px;
+}
