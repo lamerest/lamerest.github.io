@@ -28,7 +28,7 @@ header figure{
 	position: relative;
 	width: calc(100vw - 17px);
 	height: 100vh;
-	background: url(fs.PNG) no-repeat;
+	background: url(fs.png) no-repeat;
 	background-size: 105%;
 	background-position: -60px -150px;
 }
