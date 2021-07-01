@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+figure{
+    margin: 0;
+}
+figure img{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    padding: 0;
+}
+menu{
+    padding-left: 15px;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    height: 80px;
+    background-color: #F8F8FF;
+}
+.RDB{
+    color: black;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-family: "Space Mono", sans-serif;
+    font-weight: normal;
+}
+menu ul li{
+    color: black;
+    margin-right: 15px;
+    transition: 0.3s ease-out;
+    border-bottom: 1px solid transparent;
+}
+menu ul li:hover{
+    border-bottom: 1px solid black;
+}
+.social__media{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+/* CONTAINER */
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 50px 50px;
+    background: url("img/Space.png") no-repeat;
+}
+.space .text__block{
+    width: 50%;
+}
+.space figure{
+    width: 50%;
+    height: 80%;
+}
+.space .text__block a{
+    width: 100px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 12px;
+    margin-top: 30px;
+    color: ghostwhite;
+    font-family: Montserrat, sans-serif;
+    background-color: royalblue;
+}
+.text__block{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.text__block h2{
+    font-family: "Space Mono", sans-serif;
+}
+.text__block h1{
+    font-family: "Space Mono", sans-serif;
+}
+.text__block p{
+    font-family: Montserrat, sans-serif;
+}
+
+
+/* STRATOSPHERE */
+.stratosphere{
+    height: 800px;
+    background: url("img/Stratosphere.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/* SURFACE */
+.surface{
+    background: #AEF8FF;
+    background-size: 100% 100%;
+    margin-bottom: -5px;
+}
+.surface .text__block h2, .surface .text__block p{
+    color: #282828;
+    margin: 10px;
+}
+
+/* UNDERGROUND */
+.underground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    padding: 0 50px 0 50px;
+    background: url("img/Ground.png");
+    background-size: 100%;
+}
+
+/* BASEMENT */
+.radioactive__basement{
+    position: relative;
+}
+.radioactive__basement .text__block{
+    position: absolute;
+    right: 10%;
+    top: 40%;
+}
+
+/* HELL */
+.hell{
+    position: relative;
+}
+.hell .text__block{
+    width: 500px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+.hell figure{
+    margin-bottom: -5px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #282828;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid royalblue;
+}
+footer menu{
+
+    border-bottom: 1px solid ghostwhite;
+}
+footer menu ul li{
+    border-bottom: 1px solid transparent;
+}
+footer menu ul li:hover{
+    border-bottom: 1px solid ghostwhite;
+}
+footer menu ul li a{
+    color: ghostwhite;
+}
+footer h2.RDB{
+    text-align: center;
+    color: ghostwhite;
+}
